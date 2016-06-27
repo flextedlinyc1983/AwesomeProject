@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+ 
+var func = function () { 
+$(this).fadeOut(); 
+}
+
+
+
+$("#panel").fadeIn(function () { 
+var obj = this; 
+$("#panel button").bind("click",$.proxy(func, obj)); 
+}); 
+
+
+
+
+
+
+
+});
+</script>
+</head>
+<body>
+
+<div id = "panel"> 
+<h1>My First JavaScript</h1>
+<button type="button">
+Click me to display Date and Time.</button>
+</div> 
+<p id="demo"></p>
+
+</body>
+</html>
+
