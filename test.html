@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+
+
+
+});
+
+
+    var SampleData = "Hello"
+
+
+function show01(){
+alert(SampleData)
+}
+
+
+
+function load() {
+	var divNode = document.getElementById('div001');
+	divNode.onclick = divClickHandler;
+}
+
+function divClickHandler() {
+	// alert("div click");
+
+	console.log(document.querySelectorAll("#div001>.contentsTypeA").length);
+}
+
+
+
+window.onload = load;
+
+</script>
+</head>
+<body>
+
+<button onclick="show01()">Show SampleData</button>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+<a href="http://www.w3schools.com/canvas/default.asp" name="z" id="a001">測試</a>
+
+<div id="div001" style="border: 1px solid #FF0000">
+	<div class="contentsTypeA">
+		this is Contents Item 001
+	</div>
+
+	<a href="http://www.w3schools.com/canvas/default.asp" name="z" id="a001" style="color: #FF0000">測試2</a>
+</div>
+
+</body>
+</html>
+
