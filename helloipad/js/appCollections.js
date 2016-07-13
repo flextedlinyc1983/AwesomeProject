@@ -1,0 +1,1 @@
+// UserManager Usersava.collections.UserManager = Backbone.Collection.extend({	model: ava.models.User});// userManager usersvar userManager = new ava.collections.UserManager([ted,belle]);
